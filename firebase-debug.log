@@ -1,0 +1,239 @@
+[debug] [2025-06-27T11:02:04.935Z] ----------------------------------------------------------------------
+[debug] [2025-06-27T11:02:04.938Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\tiwar\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-06-27T11:02:04.938Z] CLI Version:   14.9.0
+[debug] [2025-06-27T11:02:04.938Z] Platform:      win32
+[debug] [2025-06-27T11:02:04.939Z] Node Version:  v22.16.0
+[debug] [2025-06-27T11:02:04.939Z] Time:          Fri Jun 27 2025 16:32:04 GMT+0530 (India Standard Time)
+[debug] [2025-06-27T11:02:04.939Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-27T11:02:04.950Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-27T11:02:04.951Z] > authorizing via signed-in user (tiwarideepakmalad@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\tiwar\OneDrive\Desktop\test
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-06-27T11:02:34.760Z] Checked if tokens are valid: false, expires at: 1751015971957
+[debug] [2025-06-27T11:02:34.760Z] Checked if tokens are valid: false, expires at: 1751015971957
+[debug] [2025-06-27T11:02:34.760Z] > refreshing access token with scopes: []
+[debug] [2025-06-27T11:02:34.762Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-06-27T11:02:34.762Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-06-27T11:02:34.933Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-06-27T11:02:34.933Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-06-27T11:02:34.940Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-06-27T11:02:35.776Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-06-27T11:02:35.777Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project sunteck1-36a23 (sunteck1) 
+[info] 
+=== Dataconnect Setup
+[debug] [2025-06-27T11:02:38.697Z] Checked if tokens are valid: true, expires at: 1751025753933
+[debug] [2025-06-27T11:02:38.697Z] Checked if tokens are valid: true, expires at: 1751025753933
+[debug] [2025-06-27T11:02:38.697Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/sunteck1-36a23/billingInfo [none]
+[debug] [2025-06-27T11:02:40.081Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/sunteck1-36a23/billingInfo 200
+[debug] [2025-06-27T11:02:40.081Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/sunteck1-36a23/billingInfo {"name":"projects/sunteck1-36a23/billingInfo","projectId":"sunteck1-36a23","billingAccountName":"billingAccounts/017D0C-EEA8FB-116E4F","billingEnabled":true}
+[info] i  dataconnect: ensuring required API firebasedataconnect.googleapis.com is enabled... 
+[info] i  dataconnect: ensuring required API sqladmin.googleapis.com is enabled... 
+[info] i  dataconnect: ensuring required API compute.googleapis.com is enabled... 
+[debug] [2025-06-27T11:02:40.084Z] Checked if tokens are valid: true, expires at: 1751025753933
+[debug] [2025-06-27T11:02:40.084Z] Checked if tokens are valid: true, expires at: 1751025753933
+[debug] [2025-06-27T11:02:40.084Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/sunteck1-36a23/locations/-/services [none]
+[debug] [2025-06-27T11:02:42.016Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/sunteck1-36a23/locations/-/services 200
+[debug] [2025-06-27T11:02:42.016Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/sunteck1-36a23/locations/-/services {}
+[info] i  Learn more about Gemini in Firebase and how it uses your data: https://firebase.google.com/docs/gemini-in-firebase#how-gemini-in-firebase-uses-your-data 
+[info] i  dataconnect: ensuring required API cloudaicompanion.googleapis.com is enabled... 
+[debug] [2025-06-27T11:02:50.734Z] Checked if tokens are valid: true, expires at: 1751025753933
+[debug] [2025-06-27T11:02:50.734Z] Checked if tokens are valid: true, expires at: 1751025753933
+[debug] [2025-06-27T11:02:50.735Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/sunteck1-36a23/services/cloudaicompanion.googleapis.com [none]
+[debug] [2025-06-27T11:02:50.735Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/sunteck1-36a23/services/cloudaicompanion.googleapis.com x-goog-quota-user=projects/sunteck1-36a23
+[debug] [2025-06-27T11:02:52.609Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/sunteck1-36a23/services/cloudaicompanion.googleapis.com 200
+[debug] [2025-06-27T11:02:52.610Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/sunteck1-36a23/services/cloudaicompanion.googleapis.com [omitted]
+[info] +  dataconnect: required API cloudaicompanion.googleapis.com is enabled 
+[debug] [2025-06-27T11:02:55.934Z] Checked if tokens are valid: true, expires at: 1751025753933
+[debug] [2025-06-27T11:02:55.934Z] Checked if tokens are valid: true, expires at: 1751025753933
+[debug] [2025-06-27T11:02:55.934Z] >>> [apiv2][query] POST https://cloudaicompanion.googleapis.com/v1beta/projects/sunteck1-36a23/locations/global/instances/default:completeTask [none]
+[debug] [2025-06-27T11:02:55.934Z] >>> [apiv2][body] POST https://cloudaicompanion.googleapis.com/v1beta/projects/sunteck1-36a23/locations/global/instances/default:completeTask {"input":{"messages":[{"content":"movie rating app","author":"USER"}]},"experienceContext":{"experience":"/appeco/firebase/fdc-schema-generator"}}
+[debug] [2025-06-27T11:03:20.758Z] <<< [apiv2][status] POST https://cloudaicompanion.googleapis.com/v1beta/projects/sunteck1-36a23/locations/global/instances/default:completeTask 200
+[debug] [2025-06-27T11:03:20.758Z] <<< [apiv2][body] POST https://cloudaicompanion.googleapis.com/v1beta/projects/sunteck1-36a23/locations/global/instances/default:completeTask {"output":{"messages":[{"content":"```graphql\ntype User @table {\n  username: String!\n  email: String!\n  createdAt: Timestamp!\n  photoUrl: String\n}\n\ntype Movie @table {\n  title: String!\n  releaseYear: Int!\n  createdAt: Timestamp!\n  synopsis: String\n  posterUrl: String\n  runtimeMinutes: Int\n}\n\ntype Rating @table {\n  user: User!\n  movie: Movie!\n  score: Int!\n  createdAt: Timestamp!\n  updatedAt: Timestamp!\n  comment: String\n}\n\ntype Watchlist @table {\n  user: User!\n  movie: Movie!\n  addedAt: Timestamp!\n}\n\ntype Genre @table {\n  name: String!\n}\n\ntype MovieGenre @table(key: [\"movie\", \"genre\"]) {\n  movie: Movie!\n  genre: Genre!\n  createdAt: Timestamp!\n}\n```\n"}]},"displayContext":{"additionalContext":{"@type":"type.googleapis.com/google.cloud.cloudaicompanion.v1main.FirebaseChatDisplayContext","firebaseFdcDisplayContext":{"schemaSyntaxError":""}}}}
+[debug] [2025-06-27T11:03:20.760Z] Checked if tokens are valid: true, expires at: 1751025753933
+[debug] [2025-06-27T11:03:20.760Z] Checked if tokens are valid: true, expires at: 1751025753933
+[debug] [2025-06-27T11:03:20.760Z] >>> [apiv2][query] GET https://sqladmin.googleapis.com/v1/projects/sunteck1-36a23/instances [none]
+[debug] [2025-06-27T11:03:20.931Z] <<< [apiv2][status] GET https://sqladmin.googleapis.com/v1/projects/sunteck1-36a23/instances 200
+[debug] [2025-06-27T11:03:20.931Z] <<< [apiv2][body] GET https://sqladmin.googleapis.com/v1/projects/sunteck1-36a23/instances {"items":[{"kind":"sql#instance","state":"RUNNABLE","databaseVersion":"POSTGRES_15","settings":{"authorizedGaeApplications":[],"tier":"db-f1-micro","kind":"sql#settings","userLabels":{"firebase-data-connect":"ft"},"availabilityType":"ZONAL","pricingPlan":"PER_USE","replicationType":"SYNCHRONOUS","activationPolicy":"ALWAYS","ipConfiguration":{"authorizedNetworks":[],"sslMode":"ALLOW_UNENCRYPTED_AND_ENCRYPTED","ipv4Enabled":true,"requireSsl":false,"serverCaMode":"GOOGLE_MANAGED_INTERNAL_CA"},"locationPreference":{"zone":"asia-south1-c","kind":"sql#locationPreference"},"databaseFlags":[{"name":"cloudsql.iam_authentication","value":"on"}],"dataDiskType":"PD_SSD","backupConfiguration":{"startTime":"09:00","kind":"sql#backupConfiguration","backupRetentionSettings":{"retentionUnit":"COUNT","retainedBackups":7},"enabled":false,"transactionLogRetentionDays":7,"transactionalLogStorageState":"TRANSACTIONAL_LOG_STORAGE_STATE_UNSPECIFIED","backupTier":"STANDARD"},"insightsConfig":{"queryInsightsEnabled":true,"queryStringLength":1024,"queryPlansPerMinute":5},"edition":"ENTERPRISE","connectorEnforcement":"NOT_REQUIRED","settingsVersion":"3","storageAutoResizeLimit":"0","storageAutoResize":false,"dataDiskSizeGb":"10","deletionProtectionEnabled":false,"replicationLagMaxSeconds":31536000,"enableGoogleMlIntegration":false},"etag":"d547711fa01685b5317ca5a3caad3ea15359daf203974a2cd17d8e6663f4040e","ipAddresses":[{"type":"PRIMARY","ipAddress":"35.200.245.173"},{"type":"OUTGOING","ipAddress":"34.47.249.119"}],"serverCaCert":{"kind":"sql#sslCert","certSerialNumber":"0","cert":"-----BEGIN CERTIFICATE-----\nMIIDfzCCAmegAwIBAgIBADANBgkqhkiG9w0BAQsFADB3MS0wKwYDVQQuEyQwYzYz\nMTJjOC1hNGM4LTQ2MDgtOGY3NC03MDVmNjNjYjhiZjQxIzAhBgNVBAMTGkdvb2ds\nZSBDbG91ZCBTUUwgU2VydmVyIENBMRQwEgYDVQQKEwtHb29nbGUsIEluYzELMAkG\nA1UEBhMCVVMwHhcNMjUwNjI2MTk1MjE2WhcNMzUwNjI0MTk1MzE2WjB3MS0wKwYD\nVQQuEyQwYzYzMTJjOC1hNGM4LTQ2MDgtOGY3NC03MDVmNjNjYjhiZjQxIzAhBgNV\nBAMTGkdvb2dsZSBDbG91ZCBTUUwgU2VydmVyIENBMRQwEgYDVQQKEwtHb29nbGUs\nIEluYzELMAkGA1UEBhMCVVMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB\nAQCauLWdWShlz/o1Vv1e90K1mLe9Lg2rZ7UKbhTQRB5Utg1ibuAIGbKvz79kSKfw\n2jAokQN3LhojLmTNegVPaFkVzhXGuBHNlCpyD85avQ3KSGfK5skLLBGSOH8NxF5v\nXterxAGo3nXvwAdYhbSydNa7yBKJxwj7FN+tpYWrp5lORWh7pGd6/Uvz+QbxVQQU\n6WAh4YoyOr8rJQ984crUfmqy/SAdozSnpcr+WstAplWPlIxgArX2FXM4Yv2OJzlM\ny8bNxdFlk1LxWxp2QEVUReGzPG6x/Z64DCL2lnQWyLGGcj7mjn4lu0Ist1BFDKr4\naXjxqrzg6ge6sfacQhApcI8LAgMBAAGjFjAUMBIGA1UdEwEB/wQIMAYBAf8CAQAw\nDQYJKoZIhvcNAQELBQADggEBAAsYePWtodcDTvT559BG99qePOei+sPV+nywvnYs\n4Sjt4UY1QBMRpZhQhimnW38ByLHy3hhmU1ThnThiF0tGQMpqzTYct00NtAmiBBm8\n08+VsMbfWnjuFSrgKa9i1TvTMj723Bkv2I2acFgWb6O5dc0nGvKIzO7j0OMUQIfs\ndBh9EFnIvn42OKpfCdnSI0nhj2zgN+MuWV1TT8c73FTgLQaFvRxp/+p2Q7LR76Yy\nYLEDpmxWaNDJc5B7QwayLvYgxxG2MnoTmfkHzWi99bVPOwNqftJQ6FUJo6MZ7Ews\nWKtiiXluda1VmiH6z+g4fpKeVvnaS1bXqeqS5NhgtC73zwg=\n-----END CERTIFICATE-----","commonName":"C=US,O=Google\\, Inc,CN=Google Cloud SQL Server CA,dnQualifier=0c6312c8-a4c8-4608-8f74-705f63cb8bf4","sha1Fingerprint":"8e48f2350ba80581b00afac2e782c3ad79ef9baf","instance":"test-fdc","createTime":"2025-06-26T19:52:16.418Z","expirationTime":"2035-06-24T19:53:16.418Z"},"instanceType":"CLOUD_SQL_INSTANCE","project":"sunteck1-36a23","serviceAccountEmailAddress":"p562096685576-oktctz@gcp-sa-cloud-sql.iam.gserviceaccount.com","backendType":"SECOND_GEN","selfLink":"https://sqladmin.googleapis.com/v1/projects/sunteck1-36a23/instances/test-fdc","connectionName":"sunteck1-36a23:asia-south1:test-fdc","name":"test-fdc","region":"asia-south1","gceZone":"asia-south1-c","databaseInstalledVersion":"POSTGRES_15_13","maintenanceVersion":"POSTGRES_15_13.R20250302.00_31","createTime":"2025-06-26T19:51:12.597Z","sqlNetworkArchitecture":"NEW_NETWORK_ARCHITECTURE","satisfiesPzi":true,"includeReplicasForMajorVersionUpgrade":false}]}
+[info] i  dataconnect: Checking Cloud SQL no cost trial eligibility... 
+[debug] [2025-06-27T11:03:20.932Z] Checked if tokens are valid: true, expires at: 1751025753933
+[debug] [2025-06-27T11:03:20.933Z] Checked if tokens are valid: true, expires at: 1751025753933
+[debug] [2025-06-27T11:03:20.933Z] >>> [apiv2][query] GET https://monitoring.googleapis.com/v3/projects/sunteck1-36a23/timeSeries/ filter=metric.type%3D%22serviceruntime.googleapis.com%2Fquota%2Fallocation%2Fusage%22+AND+metric.label.quota_metric+%3D+%22sqladmin.googleapis.com%2Ffdc_lifetime_free_trial_per_project%22&interval.endTime=2025-06-27T11%3A03%3A20.932Z&interval.startTime=2025-06-20T11%3A03%3A20.932Z
+[debug] [2025-06-27T11:03:21.913Z] <<< [apiv2][status] GET https://monitoring.googleapis.com/v3/projects/sunteck1-36a23/timeSeries/ 200
+[debug] [2025-06-27T11:03:21.913Z] <<< [apiv2][body] GET https://monitoring.googleapis.com/v3/projects/sunteck1-36a23/timeSeries/ {"timeSeries":[{"metric":{"labels":{"quota_metric":"sqladmin.googleapis.com/fdc_lifetime_free_trial_per_project"},"type":"serviceruntime.googleapis.com/quota/allocation/usage"},"resource":{"type":"consumer_quota","labels":{"project_id":"sunteck1-36a23","service":"sqladmin.googleapis.com","location":"global"}},"metricKind":"GAUGE","valueType":"INT64","points":[{"interval":{"startTime":"2025-06-26T19:51:15Z","endTime":"2025-06-26T19:51:15Z"},"value":{"int64Value":"1"}}]}],"unit":"1"}
+[warn] !  dataconnect: CloudSQL no cost trial has already been used on this project. 
+[debug] [2025-06-27T11:03:31.609Z] Checked if tokens are valid: true, expires at: 1751025753933
+[debug] [2025-06-27T11:03:31.609Z] Checked if tokens are valid: true, expires at: 1751025753933
+[debug] [2025-06-27T11:03:31.609Z] >>> [apiv2][query] GET https://sqladmin.googleapis.com/v1/projects/sunteck1-36a23/instances/test-fdc/databases [none]
+[debug] [2025-06-27T11:03:32.018Z] <<< [apiv2][status] GET https://sqladmin.googleapis.com/v1/projects/sunteck1-36a23/instances/test-fdc/databases 200
+[debug] [2025-06-27T11:03:32.018Z] <<< [apiv2][body] GET https://sqladmin.googleapis.com/v1/projects/sunteck1-36a23/instances/test-fdc/databases {"kind":"sql#databasesList","items":[{"kind":"sql#database","charset":"UTF8","collation":"en_US.UTF8","etag":"47387cd83a6e666aab800dd4e2ab071d9e80e5ec3ad9cd4be390698486da9221","name":"postgres","instance":"test-fdc","selfLink":"https://sqladmin.googleapis.com/v1/projects/sunteck1-36a23/instances/test-fdc/databases/postgres","project":"sunteck1-36a23"}]}
+[info] +  Wrote dataconnect\dataconnect.yaml 
+[info] +  Wrote dataconnect\schema\schema.gql 
+[info] +  Wrote dataconnect\connector\connector.yaml 
+[info] +  Detected WEB app in directory C:\Users\tiwar\OneDrive\Desktop\test 
+[info] i  Writing your new SDK configuration to C:\Users\tiwar\OneDrive\Desktop\test\dataconnect\connector/connector.yaml 
+[info] +  Wrote dataconnect\connector\connector.yaml 
+[info] i  dataconnect: downloading dataconnect-emulator-2.8.0.exe... {"metadata":{"emulator":{"name":"dataconnect"},"message":"downloading dataconnect-emulator-2.8.0.exe..."}}
+[debug] [2025-06-27T11:03:51.424Z] >>> [apiv2][query] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-windows-v2.8.0 
+[debug] [2025-06-27T11:03:51.854Z] <<< [apiv2][status] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-windows-v2.8.0 200
+[debug] [2025-06-27T11:03:51.855Z] <<< [apiv2][body] GET https://storage.googleapis.com/firemat-preview-drop/emulator/dataconnect-emulator-windows-v2.8.0 [stream]
+[info] i  dataconnect: Removing outdated emulator files: dataconnect-emulator-2.7.1.exe {"metadata":{"emulator":{"name":"dataconnect"},"message":"Removing outdated emulator files: dataconnect-emulator-2.7.1.exe"}}
+[debug] [2025-06-27T11:03:55.940Z] defaultcredentials: writing to file C:\Users\tiwar\AppData\Roaming\firebase\tiwarideepakmalad_gmail_com_application_default_credentials.json
+[info] I0627 16:33:56.392282   16336 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "C:\\Users\\tiwar\\OneDrive\\Desktop\\test\\dataconnect-generated\\js\\default-connector"
+I0627 16:33:56.399419   16336 generate.go:40] Generated all sources. Writing them to disk...
+I0627 16:33:56.407763   16336 collector.go:107] connector "default" javascriptSdk wrote into "C:\\Users\\tiwar\\OneDrive\\Desktop\\test\\dataconnect-generated\\js\\default-connector"
+Generated sources: package.json [634B] README.md [2773B] index.d.ts [760B] esm\index.esm.js [107B] esm\package.json [17B] index.cjs.js [142B] 
+I0627 16:33:56.410712   16336 collector.go:114] connector "default" javascriptSdk deleted obsolete file "C:\\Users\\tiwar\\OneDrive\\Desktop\\test\\dataconnect-generated\\js\\default-connector\\react\\README.md"
+I0627 16:33:56.414198   16336 collector.go:114] connector "default" javascriptSdk deleted obsolete file "C:\\Users\\tiwar\\OneDrive\\Desktop\\test\\dataconnect-generated\\js\\default-connector\\react\\esm\\index.esm.js"
+I0627 16:33:56.416074   16336 collector.go:114] connector "default" javascriptSdk deleted obsolete file "C:\\Users\\tiwar\\OneDrive\\Desktop\\test\\dataconnect-generated\\js\\default-connector\\react\\esm\\package.json"
+I0627 16:33:56.419050   16336 collector.go:114] connector "default" javascriptSdk deleted obsolete file "C:\\Users\\tiwar\\OneDrive\\Desktop\\test\\dataconnect-generated\\js\\default-connector\\react\\index.cjs.js"
+I0627 16:33:56.419562   16336 collector.go:114] connector "default" javascriptSdk deleted obsolete file "C:\\Users\\tiwar\\OneDrive\\Desktop\\test\\dataconnect-generated\\js\\default-connector\\react\\index.d.ts"
+I0627 16:33:56.423140   16336 collector.go:114] connector "default" javascriptSdk deleted obsolete file "C:\\Users\\tiwar\\OneDrive\\Desktop\\test\\dataconnect-generated\\js\\default-connector\\react\\package.json"
+I0627 16:33:56.465648   16336 installsdk.go:55] Package @firebasegen/default-connector is already installed. Skipping installation
+
+[info] i  Generated SDK code for default 
+[info] +  If you'd like to add more generated SDKs to your app your later, run firebase init dataconnect:sdk again 
+[info] 
+=== Firestore Setup
+[info] i  firestore: ensuring required API firestore.googleapis.com is enabled... 
+[debug] [2025-06-27T11:03:56.473Z] Checked if tokens are valid: true, expires at: 1751025753933
+[debug] [2025-06-27T11:03:56.473Z] Checked if tokens are valid: true, expires at: 1751025753933
+[debug] [2025-06-27T11:03:56.473Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/sunteck1-36a23/databases [none]
+[debug] [2025-06-27T11:03:57.148Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/sunteck1-36a23/databases 200
+[debug] [2025-06-27T11:03:57.148Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/sunteck1-36a23/databases {"databases":[{"name":"projects/sunteck1-36a23/databases/(default)","uid":"e10a4b3e-d832-4ed7-b770-8cb4f71169a5","createTime":"2025-06-26T19:34:28.374732Z","updateTime":"2025-06-26T19:34:28.374732Z","locationId":"asia-south1","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2025-06-27T10:03:57.117054Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"j","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","databaseEdition":"STANDARD","freeTier":true,"etag":"IOrpopO6kY4DMIvjk7Duj44D"}]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-06-27T11:04:16.255Z] Checked if tokens are valid: true, expires at: 1751025753933
+[debug] [2025-06-27T11:04:16.255Z] Checked if tokens are valid: true, expires at: 1751025753933
+[debug] [2025-06-27T11:04:16.255Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/sunteck1-36a23/releases pageSize=10&pageToken=
+[debug] [2025-06-27T11:04:17.611Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/sunteck1-36a23/releases 200
+[debug] [2025-06-27T11:04:17.612Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/sunteck1-36a23/releases {"releases":[{"name":"projects/sunteck1-36a23/releases/cloud.firestore","rulesetName":"projects/sunteck1-36a23/rulesets/d6626560-38a5-4910-bc3a-570aee54dcae","createTime":"2025-06-26T19:34:35.608610Z","updateTime":"2025-06-26T21:11:41.485280Z"},{"name":"projects/sunteck1-36a23/releases/firebase.storage/sunteck1-36a23.firebasestorage.app","rulesetName":"projects/sunteck1-36a23/rulesets/30c6677b-f2fe-4f9d-969e-22df1fa010ca","createTime":"2025-06-26T19:47:00.104218Z","updateTime":"2025-06-26T20:05:35.201853Z"}]}
+[debug] [2025-06-27T11:04:17.612Z] Checked if tokens are valid: true, expires at: 1751025753933
+[debug] [2025-06-27T11:04:17.612Z] Checked if tokens are valid: true, expires at: 1751025753933
+[debug] [2025-06-27T11:04:17.612Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/sunteck1-36a23/rulesets/d6626560-38a5-4910-bc3a-570aee54dcae [none]
+[debug] [2025-06-27T11:04:17.956Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/sunteck1-36a23/rulesets/d6626560-38a5-4910-bc3a-570aee54dcae 200
+[debug] [2025-06-27T11:04:17.956Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/sunteck1-36a23/rulesets/d6626560-38a5-4910-bc3a-570aee54dcae [omitted]
+[info] i  Downloaded the existing Firestore Security Rules from the Firebase console 
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-06-27T11:04:23.762Z] Checked if tokens are valid: true, expires at: 1751025753933
+[debug] [2025-06-27T11:04:23.763Z] Checked if tokens are valid: true, expires at: 1751025753933
+[debug] [2025-06-27T11:04:23.763Z] Checked if tokens are valid: true, expires at: 1751025753933
+[debug] [2025-06-27T11:04:23.763Z] Checked if tokens are valid: true, expires at: 1751025753933
+[debug] [2025-06-27T11:04:23.763Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/sunteck1-36a23/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2025-06-27T11:04:23.764Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/sunteck1-36a23/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2025-06-27T11:04:23.954Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/sunteck1-36a23/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2025-06-27T11:04:23.954Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/sunteck1-36a23/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/sunteck1-36a23/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[debug] [2025-06-27T11:04:24.004Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/sunteck1-36a23/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2025-06-27T11:04:24.004Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/sunteck1-36a23/databases/(default)/collectionGroups/-/indexes {}
+[info] i  Downloaded the existing Firestore indexes from the Firebase console 
+[info] i  firestore.indexes.json is unchanged 
+[info] +  Wrote firestore.indexes.json 
+[info] 
+=== Genkit Setup
+[debug] [2025-06-27T11:04:33.370Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-27T11:04:33.371Z] > authorizing via signed-in user (tiwarideepakmalad@gmail.com)
+[debug] [2025-06-27T11:04:33.371Z] [iam] checking project sunteck1-36a23 for permissions ["firebase.projects.get"]
+[debug] [2025-06-27T11:04:33.371Z] Checked if tokens are valid: true, expires at: 1751025753933
+[debug] [2025-06-27T11:04:33.371Z] Checked if tokens are valid: true, expires at: 1751025753933
+[debug] [2025-06-27T11:04:33.371Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sunteck1-36a23:testIamPermissions [none]
+[debug] [2025-06-27T11:04:33.371Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/sunteck1-36a23:testIamPermissions x-goog-quota-user=projects/sunteck1-36a23
+[debug] [2025-06-27T11:04:33.371Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sunteck1-36a23:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-27T11:04:34.731Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sunteck1-36a23:testIamPermissions 200
+[debug] [2025-06-27T11:04:34.731Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sunteck1-36a23:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] i  functions/.eslintrc.js is unchanged 
+[info] i  functions/tsconfig.dev.json is unchanged 
+[info] +  Wrote functions/tsconfig.json 
+[info] i  functions/src/index.ts is unchanged 
+[info] i  functions/.gitignore is unchanged 
+[info] 
+[info] i  genkit: Installing Genkit CLI version 1.13.0
+ 
+[info] i  genkit: Installing NPM packages for genkit 
+[info] +  genkit: Successfully installed NPM packages 
+[info] i  genkit: Updating tsconfig.json 
+[info] +  genkit: Successfully updated tsconfig.json 
+[info] i  genkit: Updating package.json 
+[info] +  genkit: Successfully updated package.json 
+[info] Telemetry data can be used to monitor and gain insights into your AI features. There may be a cost associated with using this feature. See https://firebase.google.com/docs/genkit/observability/telemetry-collection.
+[info] i  genkit: Generating sample file 
+[info] +  genkit: Successfully generated sample file (src/genkit-sample.ts) 
+[info] 
+[info] 
+Login to Google Cloud using:
+[info]     gcloud auth application-default login --project sunteck1-36a23
+
+[info] Then start the Genkit developer experience by running:
+[info]     cd functions && npm run genkit:start
+[info] 
+=== Functions Setup
+[debug] [2025-06-27T11:07:17.953Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-27T11:07:17.956Z] > authorizing via signed-in user (tiwarideepakmalad@gmail.com)
+[debug] [2025-06-27T11:07:17.957Z] [iam] checking project sunteck1-36a23 for permissions ["firebase.projects.get"]
+[debug] [2025-06-27T11:07:17.965Z] Checked if tokens are valid: true, expires at: 1751025753933
+[debug] [2025-06-27T11:07:17.965Z] Checked if tokens are valid: true, expires at: 1751025753933
+[debug] [2025-06-27T11:07:17.967Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/sunteck1-36a23:testIamPermissions [none]
+[debug] [2025-06-27T11:07:17.967Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/sunteck1-36a23:testIamPermissions x-goog-quota-user=projects/sunteck1-36a23
+[debug] [2025-06-27T11:07:17.967Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sunteck1-36a23:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-27T11:07:19.407Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/sunteck1-36a23:testIamPermissions 200
+[debug] [2025-06-27T11:07:19.407Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/sunteck1-36a23:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+Detected existing codebase(s): default
+
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[error] Invalid codebase name. Codebase must be less than 64 characters and can contain only lowercase letters, numeric characters, underscores, and dashes.
+[debug] [2025-06-27T11:18:34.286Z] ExitPromptError: User force closed the prompt with SIGINT
+    at Interface.sigint (C:\Users\tiwar\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\@inquirer\core\dist\commonjs\lib\create-prompt.js:101:37)
+    at Interface.emit (node:events:518:28)
+    at Interface.emit (node:domain:489:12)
+    at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1128:18)
+    at ReadStream.onkeypress (node:internal/readline/interface:267:20)
+    at ReadStream.emit (node:events:530:35)
+    at ReadStream.emit (node:domain:489:12)
+    at emitKeys (node:internal/readline/utils:370:14)
+    at emitKeys.next (<anonymous>)
+    at ReadStream.onData (node:internal/readline/emitKeypressEvents:64:36)
+[error] 
+[error] Error: An unexpected error has occurred.

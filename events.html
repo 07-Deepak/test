@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunteck Maxx World</title>
+  <link rel="shortcut icon" href="image/logo1.png" type="image/png" />
+  <link rel="stylesheet" href="css/aboutus.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<style>
+    :root {
+      --primary-color: #0077b6;
+      --background-color: #f4f4f4;
+      --card-bg: #ffffff;
+      --text-color: #333;
+      --shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      --border-radius: 15px;
+      --image-height: 180px;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: linear-gradient(180deg, #f4f4f4, #ffffff);
+      animation: fadeInBody 1s ease-in;
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .event-section {
+      padding: 40px 20px;
+      background-color: var(--background-color);
+      animation: slideIn 1s ease;
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .event-section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: var(--primary-color);
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .event-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      animation: fadeInGrid 1s ease-in-out;
+    }
+
+    @keyframes fadeInGrid {
+      from { opacity: 0; transform: scale(0.97); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .event-card {
+      background: var(--card-bg);
+      padding: 20px;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .event-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .event-card h2 {
+      color: var(--primary-color);
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
+    .event-card p {
+      font-size: 0.95rem;
+      color: var(--text-color);
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+
+    .event-images {
+      margin-top: 12px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 10px;
+    }
+
+    .event-images img {
+      width: 100%;
+      height: var(--image-height);
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .event-images img:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 500px) {
+      .event-section {
+        padding: 20px 10px;
+      }
+
+      .event-card h2 {
+        font-size: 1.2rem;
+      }
+
+      .event-card p {
+        font-size: 0.9rem;
+      }
+    }
+
+    .popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.6);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+
+    .popup {
+      background: white;
+      width: 100vw;
+      height: 100vh;
+      border-radius: 0;
+      box-shadow: none;
+      overflow: hidden;
+      animation: fadeInPopup 0.4s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    @keyframes fadeInPopup {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .popup-header {
+      background: var(--primary-color);
+      color: white;
+      padding: 15px;
+      font-size: 1.5rem;
+    }
+
+    .popup-body {
+      flex: 1;
+      padding: 15px;
+      overflow-y: auto;
+    }
+
+    .popup-images {
+      position: relative;
+      display: flex;
+      overflow: hidden;
+    }
+
+    .popup-images img {
+      min-width: 100%;
+      height: 70vh;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .popup-footer {
+      padding: 10px 15px;
+      text-align: right;
+    }
+
+    .close-btn {
+      background: #ff4757;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .close-btn:hover {
+      background: #e84118;
+    }
+
+    .slide-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 10;
+      border-radius: 50%;
+      transition: background 0.3s ease;
+    }
+
+    .slide-btn:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .slide-btn.left { left: 10px; }
+    .slide-btn.right { right: 10px; }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <nav>
+      <a href="index.html"><img src="image/logo.png" id="logo-img" alt="Sunteck Maxx World Logo" /></a>
+      <div class="nav-links" id="navLinks">
+        <span class="icon" onclick="hidemenu()">&#10005;</span>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#course_call">Notification</a></li>
+        </ul>
+      </div>
+      <span class="icon" onclick="showmenu()">&#9776;</span>
+    </nav>
+  </header>
+
+  <main>
+    <section class="event-section">
+      <h2>Upcoming Events</h2>
+      <div class="event-container" id="eventContainer"></div>
+    </section>
+  </main>
+
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup">
+      <div class="popup-header" id="popupTitle"></div>
+      <div class="popup-body">
+        <p id="popupDescription"></p>
+        <p id="popupDate"></p>
+        <div class="popup-images">
+          <span class="slide-btn left" onclick="changeSlide(-1)">&#10094;</span>
+          <div id="popupImageContainer"></div>
+          <span class="slide-btn right" onclick="changeSlide(1)">&#10095;</span>
+        </div>
+      </div>
+      <div class="popup-footer">
+        <button class="close-btn" onclick="closePopup()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const navLinks = document.getElementById("navLinks");
+    function showmenu() {
+      navLinks.style.right = "0";
+    }
+    function hidemenu() {
+      navLinks.style.right = "-200px";
+    }
+
+    let currentIndex = 0;
+    let currentImages = [];
+
+    function openPopup(data) {
+      document.getElementById('popupOverlay').style.display = 'flex';
+      document.getElementById('popupTitle').textContent = data.title;
+      document.getElementById('popupDescription').innerHTML = `<strong>Description:</strong> ${data.description}`;
+      document.getElementById('popupDate').innerHTML = `<strong>Date & Time:</strong> ${new Date(data.eventDateTime.seconds * 1000).toLocaleString()}`;
+      currentImages = data.images || [];
+      currentIndex = 0;
+      showSlide();
+    }
+
+    function showSlide() {
+      const container = document.getElementById('popupImageContainer');
+      if (currentImages.length === 0) {
+        container.innerHTML = '<img src="https://via.placeholder.com/600x250?text=No+Image" />';
+        return;
+      }
+      container.innerHTML = `<img src="${currentImages[currentIndex]}" alt="Slide Image" />`;
+    }
+
+    function changeSlide(step) {
+      currentIndex = (currentIndex + step + currentImages.length) % currentImages.length;
+      showSlide();
+    }
+
+    function closePopup() {
+      document.getElementById('popupOverlay').style.display = 'none';
+    }
+  </script>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+    import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBuR-YwstGzMU9HSGrogNbBqTXN9hr6l80",
+      authDomain: "sunteck1-36a23.firebaseapp.com",
+      projectId: "sunteck1-36a23",
+      storageBucket: "sunteck1-36a23.firebasestorage.app",
+      messagingSenderId: "562096685576",
+      appId: "1:562096685576:web:3bf98573623f55051107bd",
+      measurementId: "G-ND03031XQ9"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    const eventContainer = document.getElementById("eventContainer");
+
+    async function fetchEvents() {
+      const querySnapshot = await getDocs(collection(db, "events"));
+      querySnapshot.forEach((doc) => {
+        const data = doc.data();
+        const safeData = JSON.stringify(data).replace(/'/g, "&#39;");
+        const eventHTML = `
+          <div class="event-card" onclick='openPopup(${safeData})'>
+            <h2>${data.title || "No Title"}</h2>
+            <p><strong>Description:</strong> ${data.description || "N/A"}</p>
+            <p><strong>Date & Time:</strong> ${new Date(data.eventDateTime?.seconds * 1000).toLocaleString()}</p>
+            <div class="event-images">
+              ${(data.images || []).slice(0, 3).map(url => `<img src="${url}" alt="Event Image" />`).join('')}
+            </div>
+          </div>
+        `;
+        eventContainer.innerHTML += eventHTML;
+      });
+    }
+
+    fetchEvents();
+  </script>
+</body>
+</html>
